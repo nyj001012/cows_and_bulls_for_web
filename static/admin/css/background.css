@@ -1,0 +1,118 @@
+/* 폰트 */
+@font-face {
+    font-family: "nanumBarunGothic";
+    src: url("C:\Users\skdpw\Desktop\숫자야구\NanumBarunGothic.ttf") format("ttf");
+}
+
+/* 공백 처리 및 폰트적용 */
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: "nanumBarunGothic";
+    width: 1920px;
+    height: 1080px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/* 제목 */
+h1#title {
+    background-color: #B4DA6D;
+    border: solid 16.5px #b4da6d;
+    margin-top: 0px;
+    color: #333333;
+    text-align: left;
+}
+
+/* 띠 */
+p#line {
+    margin: 0;
+    height: 76px;
+    width: 1920px;
+    background-color: #b4da6d;
+    position: absolute;
+    top: 893px;
+}
+
+/* 규칙 설명 */
+p#rule {
+    font-size: 20px;
+    position: absolute;
+    left: 542px;
+    top: 95px;
+    line-height: 240%;
+}
+
+/* 버튼 공통 속성 */
+input[type=button] {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+/* 숫자 설정 및 초기화 버튼 */
+input#setupBtn {
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    left: 542px;
+    top: 425px;
+}
+
+/* 숫자 입력 창 */
+input[type=text] {
+    width: 185px;
+    height: 40px;
+    font-size: 14px;
+    text-align: left;
+    border: solid #bebebe 1px;
+    border-radius: 5px;
+    position: absolute;
+    left: 960px;
+    top: 125px;
+}
+
+/* 확인 버튼 */
+input#okBtn {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    left: 1165px;
+    top: 127px;
+}
+
+/* 종료 버튼 */
+input#go_back {
+    width: 235px;
+    height: 40px;
+    position: absolute;
+    left: 542px;
+    top: 480px;
+}
+
+/* 판정 표 */
+table#count {
+    width: 300px;
+    height: 310px;
+    font-size: 14px;
+    text-align: center;
+    border: #bebebe solid 1px;
+    border-collapse: collapse;
+    position: absolute;
+    left: 960px;
+    top: 210px;
+}
+
+table#count thead {
+    background: #e0e0e0;
+}
+
+table#count th, td {
+    padding: 0;
+    border: #bebebe solid 1px;
+    width: 100px;
+    height: 30px;
+}

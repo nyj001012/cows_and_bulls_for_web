@@ -1,0 +1,95 @@
+/* 폰트 */
+@font-face {
+    font-family: "nanumBarunGothic";
+    src: url("C:\Users\skdpw\Desktop\숫자야구\NanumBarunGothic.ttf") format("ttf");
+}
+
+/* 공백 처리 및 폰트적용 */
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: "nanumBarunGothic";
+    width: 1920px;
+    height: 1080px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/* 상단 띠 */
+h1#title {
+    background-color: #B4DA6D;
+    border: solid 16.5px #b4da6d;
+    margin-top: 0px;
+    color: #333333;
+    text-align: left;
+}
+
+/* 하단 띠 */
+p#line {
+    margin: 0;
+    height: 76px;
+    width: 1920px;
+    background-color: #b4da6d;
+    position: absolute;
+    top: 893px;
+}
+
+/* 순위표 제목 */
+p#rank_title {
+    font-size: 35px;
+    position: absolute;
+    left: 915px;
+    top: 30px;
+    line-height: 240%;
+}
+
+/* 순위표 설명 */
+p#rank_description {
+    font-size: 18px;
+    position: absolute;
+    left: 777px;
+    top: 120px;
+}
+
+/* 버튼 공통 속성 */
+input[type=button] {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+/* 시작버튼 */
+input#get_start {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    left: 910px;
+    top: 535px;
+}
+
+/* 순위표 */
+table#rank_table {
+    width: 300px;
+    height: 300px;
+    font-size: 14px;
+    text-align: center;
+    border: #bebebe solid 1px;
+    border-collapse: collapse;
+    position: absolute;
+    left: 810px;
+    top: 175px;
+}
+
+table#rank_table thead {
+    background: #e0e0e0;
+}
+
+table#rank_table th, td {
+    padding: 0;
+    border: #bebebe solid 1px;
+    width: 100px;
+    height: 30px;
+}
