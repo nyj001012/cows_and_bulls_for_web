@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>숫자 야구</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'C:\Users\skdpw\Desktop\cab\for_web\django\static\admin\css\background.css' %}">
+        <script type="text/javascript" src="{% static 'C:\Users\skdpw\Desktop\cab\for_web\django\static\admin\js\play.js' %}"></script>
+    </head>
+    <body>
+        <h1 id="title">숫자 야구</h1>
+        <p id="rule">규칙 설명<br>
+        1. 사용되는 숫자는 0~9의 서로 다른 숫자이다.<br>
+        2. 숫자는 같지만 위치가 다르면 볼(B)<br>
+        3. 숫자와 위치가 전부 같으면 스트라이크(S)<br>
+        4. 숫자와 위치가 전부 다르면 아웃(O)<br>
+        5. 9회까지 진행한다</p>
+        <input type="button" name="setupBtn" value="숫자 설정 및 초기화" id="setupBtn" onclick="setup()">
+        <form name="inputNumber">
+            <input type="text" name="input" value="숫자를 입력해주세요." id="input" maxlength="4" onclick="focusOnInput()">
+            <input type="button" name="okBtn" value="확인" id="okBtn" onclick="inputNum()">
+            <a href="{% url 'show_rank' %}">
+            <input type="button" name="go_back" value="게임종료 및 순위표로 돌아가기" id="go_back"></a>
+        </form>
+        <table id="count">
+            <thead>
+                <tr><th>횟수</th><th>입력한 숫자</th><th>판정</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td class="number"></td><td class="judgement"></td></tr>
+                <tr><td>2</td><td class="number"></td><td class="judgement"></td></tr>
+                <tr><td>3</td><td class="number"></td><td class="judgement"></td></tr>
+                <tr><td>4</td><td class="number"></td><td class="judgement"></td></tr>
+                <tr><td>5</td><td class="number"></td><td class="judgement"></td></tr>
+                <tr><td>6</td><td class="number"></td><td class="judgement"></td></tr>
+                <tr><td>7</td><td class="number"></td><td class="judgement"></td></tr>
+                <tr><td>8</td><td class="number"></td><td class="judgement"></td></tr>
+                <tr><td>9</td><td class="number"></td><td class="judgement"></td></tr>
+            </tbody>
+        </table>
+        <p id="line"></p>
+    </body>
+</html>
